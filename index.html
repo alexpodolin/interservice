@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="css/normalize.css" media="all">
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	
+
 	<!--[if it IE]>-->
           <script src="js/html5shiv.js"></script>
     <!--<![endif]-->
@@ -25,20 +25,22 @@
 <body>
 <div class="wrapper">
 	<header>
-		<div class="hdrLogo">
-		</div>
-		
-		<address class="hdrAddr">
-			<span class="hdrAddr__paragraph">Ленинградская обл.</span>
-			<span class="hdrAddr__paragraph">г.Сланцы, ул. Грибоедова, д.19а</span>
-			<a class="hdrAddr__link-tel" href="tel:+79213036945">+7(921)30-36945</a>	
-		</address>
+		<div class="hdr__container">
+			<div class="hdrLogo">
+			</div>
+			
+			<address class="hdrAddr">
+				<span class="hdrAddr__paragraph">Ленинградская обл.</span>
+				<span class="hdrAddr__paragraph">г.Сланцы, ул. Грибоедова, д.19а</span>
+				<a class="hdrAddr__link-tel" href="tel:+79213036945">+7(921)<span>30-36945</span></a>	
+			</address>
 
-		<div class="hdrAccount">
-			<span>Личный кабинет</span>
+			<div class="hdrAccount">
+				<a class="hdrAccount__link" href="#">Личный кабинет</a>
+			</div>
 		</div>
 
-		<nav class=hdrNav>
+		<nav class="hdrNav">
 			<ul class="hdrNav__menu">
 				<li class="hdrNav__menu-li">
 					<a href="#" class="hdrNav__menu-link">Главная</a>
@@ -59,17 +61,40 @@
 		</nav>
 	</header>
 
-	<div class="slider">
-		<img class="slider__slide slide-001" src="image/slide_001.jpg" alt="pc1">
-		<img class="slider__slide slide-002" src="image/slide_002.jpg" alt="pc2">
-		<img class="slider__slide slide-003" src="image/slide_003.jpg" alt="pc3">
-	</div>
+	<section id="header__slider">
+		<input type="radio" name="header__slider_dot" id="header__slide_1" checked="checked">
+		<input type="radio" name="header__slider_dot" id="header__slide_2">
+		<input type="radio" name="header__slider_dot" id="header__slide_3">
+
+		<div id="header__slides">
+			<div id="header__slides_container">
+				<div class="header__slide__container_inner">
+					<figure>										
+						<img src="image/slide_001.jpg" width="960" height="420" alt="интернет"/>							
+					</figure>
+
+					<figure>				
+						<img src="image/slide_002.jpg" width="960" height="420" alt="интернет"/>							
+					</figure>
+
+					<figure>				
+						<img src="image/slide_003.jpg" width="960" height="420" alt="интернет"/>							
+					</figure>
+				</div>
+			</div>
+		</div>
+
+		<div id="header__slider_active">
+			<label for="header__slide_1"></label>
+			<label for="header__slide_2"></label>
+			<label for="header__slide_3"></label>
+		</div>			
+	</section>
 
 	<main>
 		<div class="main__about">
-			<div class="main__about-logo">
-				<span>О компании</span>
-				<img src="image/about.png" alt="О компании">
+			<div class="main__about-logo">				
+				<span>О компании</span>				
 			</div>
 
 			<p class="main__text"><strong>ИНТЕРСЕРВИС-ННТ</strong> — торговая марка Сланцевской городской волоконно-оптической IP сети.
@@ -91,8 +116,7 @@
 
 		<div class="main__services">
 			<div class="main__services-logo">
-				<span>Услуги</span>
-				<img src="image/services.png" alt="Услуги">
+				<span>Услуги</span>				
 			</div>
 
 			<ul class="main__menu">
@@ -103,22 +127,19 @@
 				<li class="main__menu-li">Разработка сайтов</li>
 			</ul>
 
-			<p class="main__text"><strong>ООО &laquo;Интерсервис&raquo;</strong>является официальным партнером <strong>ФГУП &laquo;ЦентрИнформ&raquo;</strong> - специализированного оператора связи по предоставлению отчетности в электронном виде через интернет.</p>
+			<p class="main__text"><strong>ООО &laquo;Интерсервис&raquo;</strong>является официальным партнером <strong>ФГУП &laquo;ЦентрИнформ&raquo;</strong> - специализированного оператора связи по предоставлению отчетности в электронном виде через интернет. Всю необходимую информацию по тарифным планам и дополнительным работам можно получить:</p>
 
 			<ul class="main__menu">
-				<li class="main__menu-li">ФГУП &laquo;ЦентрИнформ&raquo;</li>
+				<li class="main__menu-li">на официальном сайте ФГУП &laquo;ЦентрИнформ&raquo;</li>
 				<li class="main__menu-li">или по телефону:(921)303-69-45</li>
 			</ul>
 		</div>
 
-		<strong>При составлении заявки через сайт ФГУП ЦентрИнформ необходимо указывать код партнера: 00034</strong>
+		<strong class="main__request">При составлении заявки через сайт ФГУП ЦентрИнформ необходимо указывать код партнера: 00034</strong>
 	</main>
 
 	<footer>
-		<div class="footer__logo-left">
-		</div>
-
-		<p class="footer__copyright">&copy;2007-2018 ООО &laquo;ИНТЕРСЕРВИС&raquo;</p>
+		<p class="footer__copyright">&copy;2007-2018 ООО &laquo;Иинтерсервис&raquo;</p>
 
 		<nav class="footerNav">
 			<ul class="footerNav__menu">
@@ -138,15 +159,19 @@
 				</li>
 			</ul>
 		</nav>
-
+		
 		<div class="footer__soc">
-				<a class="footer__soc footer__soc-vk" href="http://vk.com/interservis">vk.com/interservis</a>
-				<a class="footer__soc footer__soc-skype" href="skype:interservis?call">interservis</a>
-			</div>
+			<div class="footer__vk">
+				<a class="footer__vk-logo" href="http://vk.com/interservis"></a>
+				<a class="footer__vk-link" href="http://vk.com/interservis">vk.com/interservis</a>
+			</div>		
 
-		<div class="footer__logo-right">
+			<div class="footer__sk">
+				<a class="footer__sk-link" href="skype:interservis?call">interservis</a>
+				<a class="footer__sk-logo" href="skype:interservis?call"></a>
+			</div>
 		</div>
-	</footer>
+	</footer>	
 </div>
 
 <div class="login">
