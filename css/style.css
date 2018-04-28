@@ -286,7 +286,7 @@ main {
 .main__services-logo span {
 	left: 43%;
 }
-.main__text {
+.main__about p {
 	margin: 1% 0;
 	padding: 0;
 	text-indent: 7%;
@@ -430,6 +430,13 @@ footer {
 @keyframes bg-fadeIn {
     from { opacity: 0; }
 	to { opacity: 0.85; }  
+}
+.login__logout {
+	cursor: pointer;
+	margin: 1% 0 0 94%;
+}
+.login__logout:hover {
+	opacity: 0.7;
 }
 .login {
     margin: 16% auto;
