@@ -17,6 +17,8 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
+	<script src="js/js.js"></script>
+
 	<!--[if it IE]>-->
           <script src="js/html5shiv.js"></script>
     <!--<![endif]-->
@@ -36,7 +38,7 @@
 			</address>
 
 			<div class="hdrAccount">
-				<a class="hdrAccount__link" href="#">Личный кабинет</a>
+				<a class="hdrAccount__link" href="#" onclick="showLoginForm();">Личный кабинет</a>
 			</div>
 		</div>
 
@@ -69,7 +71,8 @@
 		<div id="header__slides">
 			<div id="header__slides_container">
 				<div class="header__slide__container_inner">
-					<figure>										
+					<figure>						
+						<figcaption class="header__slider-text">Предоставляем высокоскоростной доступ<br>к глобальной сети Интернет в г.Сланцы с 2007 года!</figcaption>				
 						<img src="image/slide_001.jpg" width="960" height="420" alt="интернет"/>							
 					</figure>
 
@@ -139,7 +142,7 @@
 	</main>
 
 	<footer>
-		<p class="footer__copyright">&copy;2007-2018 ООО &laquo;Иинтерсервис&raquo;</p>
+		<p class="footer__copyright">&copy;2007-2018 ООО &laquo;Интерсервис&raquo;</p>
 
 		<nav class="footerNav">
 			<ul class="footerNav__menu">
@@ -174,34 +177,34 @@
 	</footer>	
 </div>
 
-<div class="login">
-	<h2>вход в личный кабинет</h2>
+<div id="login__wrapper">
+	<div class="login">
+		<h2>вход в личный кабинет</h2>
 
-	<img src="image/pic_01.jpg" alt="neural network">
+		<form class="form__login">
+			<fieldset>
+				<legend></legend>
 
-	<form class="form__login">
-		<fieldset>
-			<legend></legend>
+				<ul class="form__login-ul">
+					<li class="form__login-item">
+						<label for="form__login-login">
+							<input id="form__login-login" type="text" placeholder="Логин" required>
+						</label>
+					</li>
 
-			<ul class="form__login-ul">
-				<li class="form__login-item">
-					<label for="form__login-login">
-						<input id="form__login-login" type="text" placeholder="логин" required>
-					</label>
-				</li>
+					<li class="form__login-item">
+						<label for="form__login-passwd">
+							<input id="form__login-passwd" type="password" placeholder="Пароль" required>
+						</label>
+					</li>
+				</ul>
 
-				<li class="form__login-item">
-					<label for="form__login-passwd">
-						<input id="form__login-passwd" type="password" placeholder="пароль" required>
-					</label>
-				</li>
-			</ul>
+				<button class="form__login-btn" type="submit">отправить</button>
+			</fieldset>
+		</form>
 
-			<button class="form__login-btn" type="submit" >отправить</button>
-		</fieldset>
-	</form>
-
-	<p>Забыли пароль?</p>
+		<a class="login__lost" href="#">Забыли пароль?</a>
+	</div>
 </div>
 
 
