@@ -120,6 +120,7 @@ header {
 	text-decoration: none;
 	padding: 5px 25px 5px 25px;
 	font-size: 24px;
+	box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.1);
 	background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(195,195,195,1) 87%, rgba(192,192,192,1) 92%); /* ff3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, rgba(192,192,192,1)), color-stop(13%, rgba(195,195,195,1)), color-stop(100%, rgba(255,255,255,1))); /* safari4+,chrome */
     background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(195,195,195,1) 87%, rgba(192,192,192,1) 92%); /* safari5.1+,chrome10+ */
@@ -665,4 +666,38 @@ fieldset {
     height: 26px;
     background: url(../image/geo.png) no-repeat;
     left: 13px;
+}
+
+/*=== Mozilla ===*/
+@-moz-document url-prefix() {
+    .hdrLogo { margin: 10px 0 0 0; }
+    .hdrAddr { margin: 27px 0 0 85px; }
+    .hdrAddr__paragraph { margin: 0 0 15px 0; }
+	.hdrAddr__link-tel { margin: 17px 0 0 0; }
+	.hdrNav { margin: -20px 0 0 0; }
+	#header__slider { margin: 20px 0 25px 0; }
+	#header__slider_active { margin: -37px 750px 0 0; }
+   	.main__about p { margin: 10px 0; }
+	footer { margin: 10px 0 0 0; }
+	.footer__copyright { margin: 3px 0 0 150px; }
+	.footerNav { margin: 25px 0 0 -150px; }
+	.footerNav__menu { margin: -2px 0 0 0; }
+	.footer__vk { margin: 7px 0 0 18%; }
+	.footer__vk-link { margin: 10px 0 0 3%; }
+	.footer__sk-link { margin: 10px 2% 0 -9%; }	
+	.form__contact fieldset { display: flex; flex-direction: column; }
+	.main__contact { margin: 25px 0 0 0; }
+	#form__contact-emailIcon, 
+	#form__contact-nameIcon, 
+	#form__contact-telIcon, 
+	#form__contact-msgIcon { margin: 10px 0;	}
+	.form__contact input[type="text"], 
+	.form__contact textarea { margin: 0 0 0 35px; }
+	.form__contact-btn { padding: 10px; margin: 135px 50px 0 62%; }
+	.login { margin: 290px auto; }
+	.form__login fieldset { display: flex; flex-direction: column; }
+	.form__login-ul { margin: 5px 0 0 0; }
+	.form__login-item:last-child { margin: 10px 0 0 0; }
+	.form__login-btn { padding: 5px 5.8%; margin: 8px 0 0 99px; }
+	.login__lost { margin: 2% auto; }
 }
