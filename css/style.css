@@ -87,7 +87,7 @@ header {
 	content: "";
 	background: url(../image/cabinet.png) transparent right center no-repeat;
 	background-size: 225px;
-	width: 276px;
+	width: 250px;
 	height: 160px;
 }
 .hdrAccount__link {
