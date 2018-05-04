@@ -173,8 +173,6 @@ header {
     font-size: 32px;
     line-height: 40px;
     font-weight: lighter;
-    
-
 }
 #header__slider_commands {
 	margin: -22% -2% 0 2%;
@@ -191,7 +189,7 @@ header {
 #header__slider_active { 
 	position: relative;
 
-	margin: -4% 80% 0 0;
+	margin: -8% 80% 0 0;
 	text-align: center;
 }
 #header__slider_active label {
